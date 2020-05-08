@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+{% load static %}
+{% block content %}
+
+<h1>Crypto Data</h1>
+<br/>
+{% if dataBlock != "Error" %}
+   <br>
+   <br>
+   <p> The Crypto is: {{ code }} </p>
+   <p> The Price of {{ code }} to USD is: ${{ price }} </p>
+
+
+{% endif %}
+
+{% endblock %}

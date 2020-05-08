@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+{% load static %}
+{% block content %}
+
+<h1>Top Currencies</h1>
+
+
+<div style="float: left">
+    {% for ticker in tickerArr %}    
+        {{ ticker }}  <br>
+    {% endfor %}
+</div>
+
+<div style="float: center">
+    {% for price in arr %}    
+       ${{ price }} <br>
+    {% endfor %}
+</div>
+
+
+{% endblock %}
